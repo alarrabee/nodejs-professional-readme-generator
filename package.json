@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-professional-readme-generator",
+  "version": "1.0.0",
+  "description": "U of M Boot Camp Module 9 Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
