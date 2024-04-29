@@ -19,46 +19,47 @@ const questions = [
         type: "input",
         message: "Installation instructions:",
         name: "installation",
+    },
+    {
+        type: "input",
+        message: "Usage information:",
+        name: "usage",
+    },
+    {
+        type: "list",
+        message: "Select a license:",
+        name: "license",
+        choices: ["Apache", "Eclipse", "IBM", "MIT", "Mozilla", "Zlib"]
+    },
+    {
+        type: "input",
+        message: "Contribution guidelines:",
+        name: "contributing",
+    },
+    {
+        type: "input",
+        message: "Test instructions:",
+        name: "tests",
+    },
+    {
+        type: "input",
+        message: "Enter your GitHub username:",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "Enter your email address",
+        name: "email",
     }
-    // {
-    //     type: "input",
-    //     message: "Usage information:",
-    //     name: "usage",
-    // },
-    // {
-    //     type: "list",
-    //     message: "Select a license:",
-    //     name: "license",
-    //     choices: ["Apache", "Eclipse", "IBM", "MIT", "Mozilla", "Zlib"]
-    // },
-    // {
-    //     type: "input",
-    //     message: "Contribution guidelines:",
-    //     name: "contributing",
-    // },
-    // {
-    //     type: "input",
-    //     message: "Test instructions:",
-    //     name: "tests",
-    // },
-    // {
-    //     type: "input",
-    //     message: "Enter your GitHub username:",
-    //     name: "github",
-    // },
-    // {
-    //     type: "input",
-    //     message: "Enter your email address",
-    //     name: "email",
-    // }
 ];
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 function writeToFile(fileName, data) {
-    const content = JSON.stringify(data, null, '\t');
+    // const content = JSON.stringify(data, null, '\t');
+    const content = generateMarkdown(data);
     fs.writeFile(fileName, content, function(err) {
-        console.log(err ? err : "Written Successfully");
+        console.log(err ? err : "README Written Successfully!");
     });
 }
 
