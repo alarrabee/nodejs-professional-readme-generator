@@ -29,7 +29,7 @@ const questions = [
         type: "list",
         message: "Select a license:",
         name: "license",
-        choices: ["Apache", "Eclipse", "IBM", "MIT", "Mozilla", "Zlib"]
+        choices: ["Apache", "Eclipse", "IBM", "MIT", "Mozilla", "Zlib", "None"]
     },
     {
         type: "input",
@@ -67,7 +67,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(function(data) {
-        const fileName = "genREADME.md";
+        const fileName = "dist/README.md";
         writeToFile(fileName, data);
     });
 }
