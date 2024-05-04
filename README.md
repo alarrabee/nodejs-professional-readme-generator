@@ -31,7 +31,7 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
-## Application Functionality
+## Application Screenshot
 ![image](https://github.com/alarrabee/nodejs-professional-readme-generator/assets/149320486/18d7e22b-99ca-4d1e-8b72-a47d2de09027)
 
 ## Installation Instructions
@@ -56,6 +56,9 @@ Prerequisites
 1. Using the command line answer each prompt as it appears and press enter.
 2. When all prompts have been answered you will see a message displayed stating that your README was successfully generated.
 3. Navigate to the dist folder to see your newly generated README.md file.
+
+### Demo
+[View a video demonstration of the application](https://drive.google.com/file/d/1zMJ6zDNLrwNKcDQModroOb431KOkC_UD/view?usp=sharing)
 
 ## Acknowledgments
 Guidance provided by edX Web Development Tutor Team (Megan Meyers)
