@@ -31,8 +31,8 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
-
 ## Application Functionality
+![image](https://github.com/alarrabee/nodejs-professional-readme-generator/assets/149320486/18d7e22b-99ca-4d1e-8b72-a47d2de09027)
 
 ## Installation Instructions
 Prerequisites
